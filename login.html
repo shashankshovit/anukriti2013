@@ -1,0 +1,30 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<form method = post action = "logging.php" onsubmit = "login_validation(this)">
+    <table class ="single_boundary" width="100%">
+        <tr>
+            <td align = center colspan = 2><h2>Existing users login here</h2></td>
+	<tr align = right>
+            <td>Username :</td>
+		
+            <td colspan=1><input type = text name = "uname" id = "uname" class="box"></td>
+        </tr>
+        <tr align = right>
+            
+            <td>Password :</td>
+		
+            <td colspan=1><input type = password name = "pass" id = "pass" class="box"></td>
+        </tr>
+        <tr align = right >
+		<td colspan=2>New User?
+		 <input type="button" class ="box4" value="register" onclick="parent.location='register.html'" > here.
+            <!--<td colspan = 1 align = right>-->&nbsp &nbsp &nbsp &nbsp &nbsp
+                <input type = submit value = "login" class="box2">
+                <!--<input type = reset value = "clear" class="box2">-->
+            </td>
+        </tr>
+    </table>
+</form>

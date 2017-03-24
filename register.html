@@ -1,0 +1,109 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<form method = post action = "./registering.php">
+    <table class = "boundary" width="60%" align="center">
+        <tr >
+            <td colspan = 4 align = center> <h1 class = "test">Register Yourself</h1> </td>
+        </tr>
+        <tr align = right>
+            <td align = left>Name :</td>
+            <td><input type="text" class="box" value ="input your name" name = "name" id ="name" onfocus="clear(this)"></td>
+            <td align = left>Username :</td>
+            <td><input type = text class="box" name = "username" id = "username" value= "choose user name" onfocus="clear(this)"></td>
+        </tr>
+        <tr align = right>
+            <td align = left>Password :</td>
+            <td><input type = password class="box" name = "password" id = "password"></td>
+            <td align = left>Confirm password :</td>
+            <td><input type = password class="box" name = "cpassword" id  = "cpassword"></td>
+        </tr>
+        <tr align = right>
+            <td align = left>E - m@il :</td>
+            <td><input type = text name = "mail" id = "mail" class="box"></td>
+            <td align = left>Retype e - m@il :</td>
+            <td><input type = text name = "cmail" id  = "cmail" class="box"></td>
+        </tr>
+
+        <tr align = right>
+            <td align = left>
+                Year :
+            </td>
+            <td>
+                I: <input type="radio" name="1" id="1" value="I">
+                II: <input type="radio" name="1" id="1" value="II">
+                III: <input type="radio" name="1" id="1" value="III">
+                IV: <input type="radio" name="1" id="1" value="IV">
+            </td>
+            <td rowspan = 5 align = left>Address :</td>
+            <td  rowspan = 5><textarea rows = 5 cols = 15 name = "address" id = "address" class="box" onfocus="clear(this)">your address</textarea></td>
+
+        </tr>
+        <tr align = right>
+            <td align = left>Sex :</td>
+            <td>Male<input type = radio name = "sex" id = "sex" value = "male" >
+                Female<input type = radio name = "sex" id = "sex" value = "female">
+                Other <input type = radio value = "neither male nor female" name ="sex" id = "sex" checked>
+            </td>
+        </tr>
+        
+        <tr align = right>
+            <td align = left>Date of birth :</td>
+            <td>
+
+                <select name = "day" id  = "day" class="box1">
+                    <option value = 01>dd</option>
+			<script language = "javascript">
+			for(i=1;i<=31;i++)
+				{
+					document.write("<option value = "+ i + "> "+ i + "</option>");
+				}
+			</script>
+                </select>
+                <select name = "month" id  = "month" class="box1">
+                        <option value = 01>mm</option>
+			<option value = 01>january</option>
+			<option value = 02>february</option>
+			<option value = 03>march</option>
+			<option value = 04>april</option>
+			<option value = 05>may</option>
+			<option value = 06>june</option>
+			<option value = 07>july</option>
+			<option value = 08>august</option>
+			<option value = 09>september</option>
+			<option value = 10>october</option>
+			<option value = 11>november</option>
+			<option value = 12>december</option>
+		</select>
+                <select id = "year" name = "year" class="box1">
+			<option value = 1980>yyyy</option>
+			
+                        <script language = "javascript">
+                                y = new Date();
+                                    for(i=1981;i<= y.getFullYear();i++)
+					document.write("<option value = " +i+ ">" + i + "</option>");
+			</script>
+		</select>
+            </td>
+            
+        </tr>
+        <tr align="right">
+            <td align = left>Mobile :</td>
+            <td><input type = text name = "mobile" id  = "mobile" value = "your mob no here" class="box" onfocus="clear(this)"></td>
+        </tr>
+        
+        <tr><td></td></tr>
+        <tr><td></td></tr>
+        <tr>
+            <td></td>
+            <td></td>
+
+            <td colspan = 2 align = center>
+                <input type = submit value = "register" class="box2" onmouseover="register_validation()">
+                <input type = reset value = "reset" class="box2">
+            </td>
+        </tr>
+    </table>
+</form>
